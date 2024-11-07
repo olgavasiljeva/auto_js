@@ -11,6 +11,4 @@ let averageScore = total / 4 //вычисление среднего значе�
 const firstName = "Mike"
 const lastName = "Smith"
 
-let studentName = firstName + " " +lastName;
-
-console.log(`The average score for student ${studentName} for the three modules will be ${averageScore}.`);
+console.log(`Student ${firstName.slice(0, 1)}. ${lastName} for the three modules will be ${averageScore}.`);
