@@ -161,3 +161,22 @@ mystring += "bet"; // получается значение "alphabet" и при
 | void        | Определяет выражение, которое должно быть вычислено без возвращения результата.                | `void(x)`                                    |
 | in          | Возвращает true, если указанный объект имеет указанное свойство.                               | `propNameOrNumber in objectName`             |
 | instanceof  | Возвращает true, если заданный объект является объектом указанного типа.                       | `objectName instanceof objectType`           |
+
+<br>
+<br>
+<br>
+
+# Динамическая типизация в JavaScripte
+
+Динамическая типизация данных означает, что тип переменной может быть изменен в процессе выполнения программы. В языках с динамической типизацией, таких как JavaScript, переменной можно присвоить значение одного типа, а затем присвоить ей значение другого типа. JavaScript сам определяет тип данных на основе присвоенного значения.
+
+```javascript
+let value = "Hello, world!"; // value имеет тип string
+console.log(typeof value); // "string"
+
+value = 40; // теперь value имеет тип number
+console.log(typeof value); // "number"
+
+value = true; // теперь value имеет тип boolean
+console.log(typeof value); // "boolean"
+```
