@@ -1,38 +1,24 @@
 const players = [
-    {
-    "id": 1,
-    "name": "Ivan",
-    "scorePoints": 4500
-    },
-    {
-    "id": 2,
-    "name": "Petr",
-    "scorePoints": 3600
-    },
-    {
-    "id": 3,
-    "name": "Vadim",
-    "scorePoints": 3433
-    },
-    {
-    "id": 4,
-    "name": "Olga",
-    "scorePoints": 2356
-    },
-    
-    ];
+  { name: "Alice", scorePoints: 0 },
+  { name: "Bob", scorePoints: 50 },
+  { name: "Charlie", scorePoints: 100 },
+  { name: "Diana", scorePoints: 100 },
+  { name: "Eve", scorePoints: -10 },
+  { name: "Frank", scorePoints: 99999 },
+  { name: "Grace", scorePoints: 999998 },
+];
 
 let scores = [];
 
-  for (let index in players) {
-    scores.push(players[index].scorePoints);
-  }
+for (let index in players) {
+  scores.push(players[index].scorePoints);
+}
 
-let maxScore = Math.max(...scores)
+let maxScore = Math.max(...scores);
 
 for (let index in players) {
-    if(players[index].scorePoints === maxScore) {
-        console.log(players[index])
-        break
-    }
+  if (players[index].scorePoints === maxScore) {
+    console.log(players[index]);
+    break;
   }
+}
